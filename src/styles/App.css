@@ -13,6 +13,12 @@
 
 body{
     background-color: black;
+    /*
+    030014/ reflect
+    #0a0118 / wope
+    */
+    padding: 0;
+    margin: 0;
 }
 
 .slides{
@@ -45,19 +51,19 @@ body{
 
 }
 .nav_items{
-    width: 95%;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     color: orange;
-    background-color: rgba(255,255,255,0.1);
-    box-shadow:inset 0px -6px 5px 0px rgba(0, 0, 0, .5) ,20px 20px 50px rgba(0, 0, 0, .5) ;
-    height: 4rem;
+    backdrop-filter: blur(12px);
+    /* background-color: rgba(255,255,255,0.1); */
+    /* box-shadow:inset 0px -6px 5px 0px rgba(0, 0, 0, .5) ,20px 20px 50px rgba(0, 0, 0, .5) ; I liked this shadow inset rip */
     position:fixed;
 }
 
 .info{
-    padding: 0 70px 0 0;
+    /* padding: 0 70px 0 0; */
     display: flex;
     font-family: 'Montserrat', sans-serif;
     color: grey;
@@ -71,7 +77,7 @@ body{
     align-items: center;
     margin: -1px;
     width: 90px;
-    height: 4rem;
+    height: 5rem;
     cursor:pointer;
     user-select: none;
 }
