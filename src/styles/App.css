@@ -1,0 +1,199 @@
+
+::-webkit-scrollbar{
+    width: 0;
+}
+
+@font-face { 
+    font-family: "Roboto-Regular";  
+    font-weight: 400; 
+    font-style: normal; 
+    src: url("chrome-extension://ifajfiofeifbbhbionejdliodenmecna/Fonts/Roboto-Regular.ttf") format("ttf"); 
+    font-display: swap
+   }
+
+body{
+    background-color: black;
+}
+
+.slides{
+    width:100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.swipe_page{
+    position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background-color: #04011f ;
+    top: 0%;
+    left: 110%;
+    transition: 2s ease;
+    transition-property: left;
+    }
+
+.swipe{
+    left: 0%;
+}
+
+/* nav */
+.nav{
+    display: flex;
+    justify-content: center;
+
+}
+.nav_items{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: orange;
+    background-color: rgba(255,255,255,0.1);
+    box-shadow:inset 0px -6px 5px 0px rgba(0, 0, 0, .5) ,20px 20px 50px rgba(0, 0, 0, .5) ;
+    height: 4rem;
+    position:fixed;
+}
+
+.info{
+    padding: 0 70px 0 0;
+    display: flex;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    text-shadow: 0px 4px 1px rgba(0,0,0,.5);
+    font-display: swap;
+}
+
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: -1px;
+    width: 90px;
+    height: 4rem;
+    cursor:pointer;
+    user-select: none;
+}
+
+/* .one{
+    border-right: rgb(14, 13, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+
+.two{
+    border-right: rgb(14, 13, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+
+.three{
+    border-right: rgb(31, 29, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+}
+.four{
+    border-right: rgb(14, 13, 13) solid;
+    border-left: rgb(31, 29, 29) solid;
+} */
+
+
+/* first slide */
+.first_slide{
+    letter-spacing: 13px;
+    font-family: arial;
+    font-size: 100px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004) ; */
+    opacity: 0;
+    line-height: .7em;
+    text-shadow: 0 0 10px rgb(248, 100, 2),
+    0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 80px rgb(248, 100, 2),
+      0 0 100px rgb(248, 100, 2);
+    color:rgb(255, 255, 255);
+
+
+}
+
+
+.isOn{
+    animation: glowMain 2s linear forwards;
+}
+
+
+@keyframes glowMain {
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+/* second slide */
+.skills{
+    padding-top: 110px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+
+}
+.second{
+    display:flex;
+    padding-top: 35px;
+    width: 450px;
+    height: 450px;
+    border: rgba(118, 105, 105, 0.515) solid 7px ;
+    justify-content: center;
+}
+.skillsHeader{
+    font-size: 60px;
+}
+.texty{
+    text-align: center;
+    color: rgba(118, 105, 105, 0.515);
+    color: white;
+    text-shadow:  0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 50px rgb(248, 100, 2);
+}
+.skillP{
+    font-size: 30px;
+    margin: 0;
+}
+
+.second:hover{
+    animation: anotherGlow .3s ease forwards;
+}
+/* frame animations */
+@keyframes anotherGlow {
+    0%{
+        border:rgba(118, 105, 105, 0.515) solid 7px ;
+        text-shadow: none;
+    }   
+    100%{
+        border:honeydew solid 7px;
+        box-shadow:inset 0 0 10px rgb(248, 100, 2),
+        inset 0 0 20px rgb(248, 100, 2),
+        inset 0 0 40px rgb(248, 100, 2),
+        0 0 20px rgb(248, 100, 2),
+        0 0 40px rgb(248, 100, 2),
+         0 0 50px rgb(248, 100, 2)
+    } 
+}
+
+/* projects */
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+

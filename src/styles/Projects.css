@@ -1,0 +1,28 @@
+.project_container{
+    border: white solid;
+    /* width: 90%;
+    height: 80%; */
+}
+
+.row{
+    border: white solid;
+    /* height: 49.6%; */
+}
+
+.column{
+    display: flex;
+    border: white solid;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    height: 380px;
+}
+.column:hover{
+    cursor: pointer;
+}
+
+.img{
+    width:100%;
+    height: 70%;
+}
+
