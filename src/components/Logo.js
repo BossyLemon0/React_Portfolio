@@ -4,7 +4,7 @@ export default function Logo(props){
 
     return (
     <div className = 'logo'>
-        logo
+        Web Developer
     </div>
     );
 }
