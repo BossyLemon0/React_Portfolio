@@ -52,7 +52,7 @@ export default function Buttons(props){
                     offset: -30
                   } )
                 break;
-            case 'four':
+                case 'four':
                 scroller.scrollTo('contact', {
                     duration: 1400,
                     delay: 100,
@@ -60,6 +60,9 @@ export default function Buttons(props){
                     offset: 0
                   } )
                 break;
+                case 'five':
+                    window.open(process.env.PUBLIC_URL + '/Omar_Ramirez_Resume.pdf');
+                    break;
             default:
                 break;
         }
@@ -82,7 +85,7 @@ export default function Buttons(props){
         <div onClick = { handleClick } className = {`btn two`} >About</div>
         <div onClick = { handleClick } className = {`btn three `} >Projects</div>
         <div onClick = { handleClick } className = {`btn four `} >Contact</div>
-        <div onClick = { handleClick } className = {`btn `} >Resume</div>
+        <div onClick = { handleClick } className = {`btn five`} >Resume</div>
         {/* <div className ={`Btn five ${props.active ? "active": ""}`} >Home</div> */}
     </div>
     );
