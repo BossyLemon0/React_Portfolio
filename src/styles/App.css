@@ -190,7 +190,7 @@ body{
     flex-direction: row;
     justify-content: center;
     position: relative;
-    transition: transform 0.5s ease;
+    transition: transform 1s ease;
     width: calc(100% + 20px);
     /* padding: 1%; */
     height: 17%;
@@ -226,12 +226,42 @@ body{
     transform: translateX(100px); /* Default to moving left */
 }
 
-.skillRow.hover-left:hover {
-    transform: translateX(-20px); /* Move left */
+.skillRow.hover-left1:hover {
+    transform: translateX(130px); /* Move left */
 }
 
-.skillRow.hover-right:hover {
-    transform: translateX(20px); /* Move right */
+.skillRow.hover-right1:hover {
+    transform: translateX(-150px); /* Move right */
+}
+.skillRow.hover-left2:hover {
+    transform: translateX(60px); /* Move left */
+}
+
+.skillRow.hover-right2:hover {
+    transform: translateX(-230px); /* Move right */
+}
+.skillRow.hover-left3:hover {
+    transform: translateX(130px); /* Move left */
+}
+
+.skillRow.hover-right3:hover {
+    transform: translateX(-150px); /* Move right */
+}
+
+.skillRow.hover-left4:hover {
+    transform: translateX(20px); /* Move left */
+}
+
+.skillRow.hover-right4:hover {
+    transform: translateX(-260px); /* Move right */
+}
+
+.skillRow.hover-left5:hover {
+    transform: translateX(130px); /* Move left */
+}
+
+.skillRow.hover-right5:hover {
+    transform: translateX(-150px); /* Move right */
 }
 .aboutMe{
     width: 60%;
