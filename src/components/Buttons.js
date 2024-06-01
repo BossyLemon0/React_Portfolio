@@ -37,7 +37,7 @@ export default function Buttons(props){
                   } )
                 break;
             case 'two':
-                scroller.scrollTo('skills', {
+                scroller.scrollTo('about', {
                     duration: 1400,
                     delay: 100,
                     smooth: true,
@@ -79,10 +79,10 @@ export default function Buttons(props){
     return (
     <div className = 'info'>
         <div onClick = { handleClick } className = {`btn one`} >Home</div>
-        <div onClick = { handleClick } className = {`btn two`} >Skills</div>
+        <div onClick = { handleClick } className = {`btn two`} >About</div>
         <div onClick = { handleClick } className = {`btn three `} >Projects</div>
-        <div onClick = { handleClick } className = {`btn four `} >Contact Me</div>
-        <div onClick = { handleClick } className = {`btn `} >About Me</div>
+        <div onClick = { handleClick } className = {`btn four `} >Contact</div>
+        <div onClick = { handleClick } className = {`btn `} >Resume</div>
         {/* <div className ={`Btn five ${props.active ? "active": ""}`} >Home</div> */}
     </div>
     );

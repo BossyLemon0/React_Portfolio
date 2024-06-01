@@ -1,9 +1,9 @@
 import React from "react";
 // import '../styles/App.css';
 
-export default function Skills(props){
+export default function About(props){
     return (
-    <div className = 'slides' name='skills'>
+    <div className = 'slides' name='about'>
         <div className="second">
             <div className="texty">
                 <header className="skillsHeader"> My skills</header>
