@@ -6,7 +6,7 @@ const ProjectsComponent = lazy(()=> import('../Projects'))
 const FooterComponent = lazy(()=> import('../Footer'))
 const ContactComponent = lazy(()=> import('../Contact'))
 
-const renderLoader = () => <p>Loading</p>
+const renderLoader = () => <p>Loading...</p>
 
 
 export default function Main(props){
