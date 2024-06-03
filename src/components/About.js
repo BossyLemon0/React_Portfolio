@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { debounce } from 'lodash';
+import CircleImage from './CircleImage';
 // import '../styles/App.css';
 
 export default function About(props){
@@ -110,7 +111,9 @@ export default function About(props){
             </div>
             <div className="contentFrames aboutMeSize">
                 <div className='logoSection '>
-                    <div className='aboutMesectionPadding'>Logo</div>
+                    <div className='aboutMesectionPadding'>
+                    <CircleImage frameColor="blue" imageUrl="path/to/your/image.jpg" />
+                    </div>
                 </div>
                 <div className='myInfoSection '>
                     <div className='myInfoHeader header aboutMesectionPadding'>
