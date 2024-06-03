@@ -6,9 +6,9 @@ const CircleImage = ({ frameColor, imageUrl }) => {
     height: '9rem', // Adjust as needed
     borderRadius: '50%',
     border: `2px solid ${frameColor}`,
-    backgroundImage: `url(${imageUrl})`,
+    backgroundImage: `url(${'myNikePic.jpg'})`,
     backgroundSize: 'cover',
-    backgroundPosition: 'center',
+    backgroundPosition: 'center 30%',
   };
 
   return <div style={circleStyle}></div>;
