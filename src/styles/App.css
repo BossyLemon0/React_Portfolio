@@ -47,7 +47,9 @@ body{
     left: 0%;
 }
 
-/* nav */
+
+
+/* #region nav */
 .nav .nav_items:before{
     background: radial-gradient(62.87% 100% at 50% 100%,rgba(255, 255, 255, 0.37) 0%,rgba(255,255,255,0) 100%);
     content:"";
@@ -98,6 +100,8 @@ body{
     cursor:pointer;
     user-select: none;
 }
+/* #endregion */
+
 
 /* .one{
     border-right: rgb(14, 13, 13) solid;
@@ -119,7 +123,7 @@ body{
 } */
 
 
-/* first slide */
+/* #region first slide */
 .first_slide{
     letter-spacing: 13px;
     font-family: arial;
@@ -135,7 +139,6 @@ body{
     color:rgb(255, 255, 255);
 }
 
-
 .isOn{
     animation: glowMain 2s linear forwards;
 }
@@ -150,8 +153,28 @@ body{
     }
 }
 
-/* second slide */
+/* #endregion */
 
+
+/* #region second slide ---------------------------------------------------------------------------------------------------------------------*/
+.titles{
+    letter-spacing: 5px;
+    font-family: arial;
+    font-size: 90px;
+    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004) ; */
+    opacity: 1;
+    line-height: .7em;
+    text-shadow: 0 0 10px rgb(248, 100, 2),
+    0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 80px rgb(248, 100, 2),
+      0 0 100px rgb(248, 100, 2);
+    color:rgb(255, 255, 255);
+}
+.titleAbout{
+    /* font-size: 90px; */
+    margin-bottom: 3%;
+}
 .about{
     margin-top: 15%;
     padding-top: 8%;
@@ -172,10 +195,37 @@ body{
     border: rgba(118, 105, 105, 0.515) solid 7px ;
     border-radius: 37px;
 }
-.skills{
+
+/* #region skills */
+.skillsSize{
     overflow: hidden;
     width: 30%;
 }
+.texty{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-direction: column;
+    color: rgba(118, 105, 105, 0.515);
+    color: white;
+    text-shadow:  0 0 20px rgb(248, 100, 2),
+    0 0 40px rgb(248, 100, 2),
+     0 0 50px rgb(248, 100, 2);
+}
+.skillsHeader{
+    font-size: 2.5rem;
+    /* align-items: center; */
+    /* justify-content: center; */
+    padding: 7% 0;
+}
+.underline:before{
+    background: radial-gradient(62.87% 100% at 50% 100%,rgba(255, 255, 255, 0.37) 0%,rgba(255,255,255,0) 100%);
+    content:"";
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+}
+
 .skillsContentContainer{
     display: flex;
     flex-direction: column;
@@ -195,14 +245,12 @@ body{
     /* padding: 1%; */
     height: 17%;
 }
-
 .staggerLeft{
     padding-left: 10%;
 }
 .staggerLeftMore{
     padding-left: 15%;
 }
-
 .skillBox{
     font-size: 1.8rem;
     display: flex;
@@ -220,16 +268,12 @@ body{
     0 0 40px rgb(248, 100, 2),
      0 0 50px rgb(248, 100, 2) */
 }
-
-
 .skillRow:hover {
     transform: translateX(100px); /* Default to moving left */
 }
-
 .skillRow.hover-left1:hover {
     transform: translateX(130px); /* Move left */
 }
-
 .skillRow.hover-right1:hover {
     transform: translateX(-150px); /* Move right */
 }
@@ -263,63 +307,59 @@ body{
 .skillRow.hover-right5:hover {
     transform: translateX(-150px); /* Move right */
 }
-.aboutMe{
-    width: 60%;
-}
 
-.titles{
-    letter-spacing: 5px;
-    font-family: arial;
-    font-size: 90px;
-    /* -webkit-box-reflect: below 1px linear-gradient(transparent, #0004) ; */
-    opacity: 1;
-    line-height: .7em;
-    text-shadow: 0 0 10px rgb(248, 100, 2),
-    0 0 20px rgb(248, 100, 2),
-    0 0 40px rgb(248, 100, 2),
-     0 0 80px rgb(248, 100, 2),
-      0 0 100px rgb(248, 100, 2);
-    color:rgb(255, 255, 255);
-}
-.titleAbout{
-    /* font-size: 90px; */
-    margin-bottom: 3%;
-}
-/* .skills{
-    padding-top: 110px;
+/* #endregion */
+
+
+/* #region about me */
+
+.aboutMeSize{
     display: flex;
-    justify-content: center;
-    text-align: center;
-} */
-.texty{
-    display: flex;
-    width: 100%;
+    width: 60%;
     align-items: center;
     flex-direction: column;
-    color: rgba(118, 105, 105, 0.515);
     color: white;
     text-shadow:  0 0 20px rgb(248, 100, 2),
     0 0 40px rgb(248, 100, 2),
      0 0 50px rgb(248, 100, 2);
 }
-.skillsHeader{
-    font-size: 2.5rem;
-    /* align-items: center; */
-    /* justify-content: center; */
-    padding: 7% 0;
-}
-.underline:before{
-    background: radial-gradient(62.87% 100% at 50% 100%,rgba(255, 255, 255, 0.37) 0%,rgba(255,255,255,0) 100%);
-    content:"";
-    bottom: 0;
+.logoSection{
+    display:flex;
     width: 100%;
-    height: 1px;
+    height: 30%;
+    border: rgba(118, 105, 105, 0.515) solid 7px ;
+    border-radius: 37px;
+    color:white
 }
-.skillP{
-    font-size: 30px;
-    margin: 0;
+.myInfoSection{
+    display:flex;
+    flex-direction: column;
+    height: 70%;
+    width: 100%;
+    border: rgba(118, 105, 105, 0.515) solid 7px ;
+    border-radius: 37px;
+    color:white
 }
 
+.aboutMesectionPadding{
+    padding: 0 10%;
+}
+.myInfoHeader{
+
+}
+.myInfoContent{
+
+}
+
+
+
+/* #endregion */
+
+
+/* #endregion -----------------------------------------------------------------------------------------------------------------------------*/
+
+
+/* #region utils, borders and more */
 .contentFrames:hover{
     animation: anotherGlow .3s ease forwards;
 }
@@ -339,8 +379,10 @@ body{
          0 0 50px rgb(248, 100, 2)
     } 
 }
+/* #endregion */
 
-/* projects */
+
+/* #region projects */
 
 .row {
     display: flex;
@@ -356,3 +398,4 @@ body{
     flex: 1;
   }
 
+/* #endregion */

@@ -47,9 +47,9 @@ export default function About(props){
         </div>
         <div className="contentContainer">
 
-            <div className="contentFrames skills">
+            <div className="contentFrames skillsSize">
             <div className="texty">
-                <div className="skillsHeader">
+                <div className="skillsHeader header">
                     <div className="underline"> 
                         Skills
                     </div>
@@ -108,20 +108,22 @@ export default function About(props){
                 </div>
             </div>
             </div>
-            <div className="contentFrames aboutMe">
-            {/* <div className="texty">
-                <header className="skillsHeader"> My skills</header>
-                    <p className="skillP">HTML</p>
-                    <p className="skillP">CSS</p>
-                    <p className="skillP">Javascript</p>
-                    <p className="skillP">SQL</p>
-                    <p className="skillP">GraphQl</p>
-                    <p className="skillP">React</p>
-                    <p className="skillP">Express</p>
-                    <p className="skillP">MongoDb</p>
-                    <p className="skillP">Express Handlebars</p>
-                    <p className="skillP">Luxon</p>
-            </div> */}
+            <div className="contentFrames aboutMeSize">
+                <div className='logoSection '>
+                    <div className='aboutMesectionPadding'>Logo</div>
+                </div>
+                <div className='myInfoSection '>
+                    <div className='myInfoHeader header aboutMesectionPadding'>
+                        About Me
+                    </div>
+                    <div className='myInfoContent content aboutMesectionPadding'>
+                    I’m a goal-oriented Full-Stack developer from Houston,Texas who likes to design new websites,
+                    learn new technologies and find new ways to solve problems. I love to help others
+                    bring their ideas life and create something truly amazing. I've worked on company dashboards, 
+                    promotional websites and more. If you have an awesome idea for a website or app, send me a message
+                    below.
+                    </div>
+                </div>
             </div>
 
         </div>
