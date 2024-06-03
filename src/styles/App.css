@@ -137,6 +137,8 @@ body{
      0 0 80px rgb(248, 100, 2),
       0 0 100px rgb(248, 100, 2);
     color:rgb(255, 255, 255);
+
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0004);
 }
 
 .isOn{
