@@ -1,13 +1,6 @@
 
 
-.column{
-    display: flex;
-    border: white solid;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    height: 380px;
-}
+
 .column:hover{
     cursor: pointer;
 }
@@ -42,15 +35,18 @@
 .row {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     width: 100%;
   }
   
-  .column {
+  .column_box {
+    border: white solid;
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    flex: 1;
+    color: white;
+    /* flex: 1; */
+    height: 14rem;
   }
 
 /* #endregion */

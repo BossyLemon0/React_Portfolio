@@ -29,13 +29,14 @@ export default function Projects(props){
     function dayplannerLink(){
         window.open("https://bossylemon0.github.io/Work_Day_Schedule/", '_blank');
     }
-
+    let links = {statTrackerLink, dashboardLink, noteTakerLink, passwordGenLink, teamGenLink, dayplannerLink}
+    let images = {day_plannerAvif, statTrackerAvif, weatherBoadAvif, passwordGenAvif, teamGenAvif, noteTakerAvif}
     return (
     <div className = 'slides project' name='projects'>
         <div className="titles titleProject">
             <div>Projects</div>
         </div>
-        <Boxes props={{statTrackerLink, dashboardLink, noteTakerLink, passwordGenLink, teamGenLink, dayplannerLink}}/>
+        <Boxes props={{links, images}}/>
     </div>
     );
 }
