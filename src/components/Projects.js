@@ -30,39 +30,42 @@ export default function Projects(props){
     }
 
     return (
-    <div className = 'slides' name='projects'>
+    <div className = 'slides project' name='projects'>
+        <div className="titles titleProject">
+            <div>Projects</div>
+        </div>
         <div className = 'project_container'>
             <div className='row'>
                 <div className='column' onClick={statTrackerLink}>
-                    <img src = { statTrackerAvif } className='img' alt='stat tracker'></img>
+                    {/* <img src = { statTrackerAvif } className='img' alt='stat tracker'></img> */}
                     <div className='header'>D&D Tracker</div>
                     <div className='text'>A more convienent way for D&D players to keep track of their stats.</div>
                 </div>
                 <div className='column' onClick={dashboardLink}>
-                <img src = { weatherBoadAvif } className='img' alt='weather board'></img>
+                {/* <img src = { weatherBoadAvif } className='img' alt='weather board'></img> */}
                     <div className='header'>Weather Dashboard</div>
                     <div className='text'>An small application to view a couple of areas's forecast.</div>
                 </div>
                 <div className='column' onClick={noteTakerLink}>
-                <img src = { noteTakerAvif } className='img' alt='note taker'></img>
+                {/* <img src = { noteTakerAvif } className='img' alt='note taker'></img> */}
                     <div className='header'>Note Taker</div>
                     <div className='text'>Create and save notes on the go!</div>
                 </div>
             </div>
             <div className='row'>
                 <div className='column' onClick={passwordGenLink}>
-                <img src = { passwordGenAvif } className='img' alt='password gen'></img>
+                {/* <img src = { passwordGenAvif } className='img' alt='password gen'></img> */}
                     <div className='header'>Password Generator</div>
                     <div className='text'>Generate a super secret password in just a few clicks.</div>
                 </div>
                 <div className='column' onClick={teamGenLink}>
-                <img src = { teamGenAvif } className='img' alt='team gen'></img>
+                {/* <img src = { teamGenAvif } className='img' alt='team gen'></img> */}
                     <div className='header'>Team Profile Generator</div>
                     <div className='text'>Create a team through a command interface and visually see, update,
                     and delete the cards when finished setting up.</div>
                 </div>
                 <div className='column' onClick={dayplannerLink}>
-                    <img src = { day_plannerAvif } className='img' alt='day planner'></img>
+                    {/* <img src = { day_plannerAvif } className='img' alt='day planner'></img> */}
                     <div className='header'>Day Planner</div>
                     <div className='text'>Create a planner for the day.</div>
                 </div>
