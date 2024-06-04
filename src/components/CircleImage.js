@@ -8,7 +8,7 @@ const CircleImage = ({ frameColor, imageUrl }) => {
     border: `2px solid ${frameColor}`,
     // backgroundImage: `url(${imageUrl})`,
     // backgroundImage: "url(/logo192.png)",
-    backgroundImage: `url(${process.env.PUBLIC_URL + '/myNikePic.jpg'})`,
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/images/myNikePic.jpg'})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center 30%',
   };
