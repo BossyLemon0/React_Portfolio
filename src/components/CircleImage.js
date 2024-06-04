@@ -6,7 +6,9 @@ const CircleImage = ({ frameColor, imageUrl }) => {
     height: '9rem', // Adjust as needed
     borderRadius: '50%',
     border: `2px solid ${frameColor}`,
-    backgroundImage: `url(${'myNikePic.jpg'})`,
+    // backgroundImage: `url(${imageUrl})`,
+    // backgroundImage: "url(/logo192.png)",
+    backgroundImage: `url(${process.env.PUBLIC_URL + '/myNikePic.jpg'})`,
     backgroundSize: 'cover',
     backgroundPosition: 'center 30%',
   };

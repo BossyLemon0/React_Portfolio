@@ -113,7 +113,7 @@ export default function About(props){
             <div className="contentFrames aboutMeSize">
                 <div className='logoSection '>
                     <div className='aboutMesectionPadding'>
-                    <CircleImage frameColor="#8E8E8E"  />
+                    <CircleImage frameColor="#8E8E8E"/>
                     </div>
                 </div>
                 <div className='myInfoSection '>
