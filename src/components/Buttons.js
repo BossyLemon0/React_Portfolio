@@ -61,13 +61,27 @@ export default function Buttons(props){
                   } )
                 break;
                 case 'five':
-                    window.open(process.env.PUBLIC_URL + '/Omar_Ramirez_Resume.pdf');
+                    openResume()
                     break;
             default:
                 break;
         }
        
     }
+
+    function openResume() {
+        fetch(process.env.PUBLIC_URL + '/Omar_Ramirez_Resume.pdf').then(response => {
+          if (response.ok) {
+            return response.blob();
+          }
+          throw new Error('Network response was not ok.');
+        }).then(blob => {
+          const url = URL.createObjectURL(blob);
+          window.open(url);
+        }).catch(error => {
+          console.error('Error fetching PDF:', error);
+        });
+      }
 
     function handleClick(event){
         active(event);
