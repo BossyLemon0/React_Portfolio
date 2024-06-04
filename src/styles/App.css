@@ -388,30 +388,3 @@ body{
 /* #endregion */
 
 
-/* #region third slide projects */
-
-.titleProject{
-    /* font-size: 90px; */
-    margin-bottom: 3%;
-}
-
-.project{
-    margin-top: 14%;
-    padding-top: 5.5%;
-    padding-bottom: 3%;
-}
-.row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
-  .column {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-
-/* #endregion */
