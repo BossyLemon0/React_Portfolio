@@ -11,11 +11,12 @@ export default function Contact(props){
     <div className ={`slides ${state.succeeded ? "success" : "contact"}`}>
         {
             state.succeeded ?
-             <div className="titles success">LET'S GLOW!</div> 
-             :
-             <>
-             <div className= 'titles'>Contact Me</div>
-             <form onSubmit={handleSubmit}>
+            <div className="titles success">LET'S GLOW!</div> 
+            :
+            <>
+                <div className= 'titles'>Contact Me</div>
+                <div className="formContainer">
+                    <form onSubmit={handleSubmit} className="form">
              <div className="name">
                  <input
                      className="form-input"
@@ -24,6 +25,7 @@ export default function Contact(props){
                      required  
                      name="name"
                  ></input>
+                 <hr className="hr-line"/>
              </div>
              <div className="email">
                  <input
@@ -38,6 +40,7 @@ export default function Contact(props){
                      field="email"
                      errors={state.errors}
                  />
+                <hr className="hr-line"/>
              </div>
              <div className="message">
                  {/* <label
@@ -52,12 +55,17 @@ export default function Contact(props){
                      placeholder="Message"
                      required
                      name="message"
+                     maxLength="300"
+                     rows="7"
                  ></textarea>
+                <hr className="hr-line"/>
              </div>
              <button type = 'submit' className = 'submit_btn' disabled={state.submitting}>
                  submit
              </button>
-            </form>
+                    </form>
+                </div>
+
             </>
         }
     </div>
