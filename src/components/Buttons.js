@@ -27,6 +27,7 @@ export default function Buttons(props){
 
     function elScroll(event){
         console.log(event.target.classList[1]);
+        const el = document.querySelector('.contact')
         switch (event.target.classList[1]) {
             case 'one':
                 scroller.scrollTo('home', {
@@ -53,12 +54,22 @@ export default function Buttons(props){
                   } )
                 break;
                 case 'four':
-                scroller.scrollTo('contact', {
+                if (el){
+                  scroller.scrollTo('contact', {
                     duration: 1400,
                     delay: 100,
                     smooth: true,
                     offset: 0
                   } )
+                }
+                else{
+                  scroller.scrollTo('success', {
+                    duration: 1400,
+                    delay: 100,
+                    smooth: true,
+                    offset: 0
+                  } )
+                }
                 break;
                 case 'five':
                     openResume()

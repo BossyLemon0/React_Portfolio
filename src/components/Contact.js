@@ -8,12 +8,13 @@ export default function Contact(props){
     //     return <p>Thanks for joining!</p>;
     // }
     return (
-    <div className = 'slides contact'>
-        <div className= 'titles'>Contact Me</div>
+    <div className ={`slides ${state.succeeded ? "success" : "contact"}`}>
         {
             state.succeeded ?
-             <div className="titles">LETS'S GLOW!</div> 
+             <div className="titles success">LET'S GLOW!</div> 
              :
+             <>
+             <div className= 'titles'>Contact Me</div>
              <form onSubmit={handleSubmit}>
              <div className="name">
                  <input
@@ -56,7 +57,8 @@ export default function Contact(props){
              <button type = 'submit' className = 'submit_btn' disabled={state.submitting}>
                  submit
              </button>
-         </form>
+            </form>
+            </>
         }
     </div>
     );
