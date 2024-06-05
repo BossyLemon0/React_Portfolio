@@ -2,6 +2,12 @@
     color: white;
 }
 
+.contact{
+    margin-top: 15%;
+    padding-top: 8%;
+    padding-bottom: 3%;
+}
+
 .slides{
     flex-direction: column;
 }

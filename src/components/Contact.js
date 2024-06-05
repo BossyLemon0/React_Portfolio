@@ -4,7 +4,7 @@ import '../styles/Form.css';
 export default function Contact(props){
     return (
     <div className = 'slides contact'>
-        <div className= 'contact_header'>Contact Me</div>
+        <div className= 'titles'>Contact Me</div>
         <form action="mailto:omardramirez2002@gmail.com">
             <div>
                 <label for=""></label>
@@ -38,7 +38,7 @@ export default function Contact(props){
                     required
                 ></textarea>
             </div>
-            <button type = 'button' className = 'submit_btn'>
+            <button type = 'submit' className = 'submit_btn'>
                 submit
             </button>
         </form>
