@@ -11,22 +11,29 @@ export default function Boxes(props){
                     <div className="mockFrame">
                         <img src = { images.statTrackerAvif } className='img' alt='stat tracker'></img>
                     </div>
-                    <div className='myProjectHeader'>D&D Tracker</div>
-                    <div className='myProjectContent'>A more convienent way for D&D players to keep track of their stats.</div>
+                    <div className="description">
+                        <div className='myProjectHeader'>D&D Tracker</div>
+                        <div className='myProjectContent'>A more convienent way for D&D players to keep track of their stats.</div>
+                    </div>
                 </div>
                 <div className='column_box contentFrames' onClick={links.dashboardLink}>
                     <div className="mockFrame">
                         <img src = { images.weatherBoadAvif } className='img' alt='weather board'></img>
                     </div>
-                    <div className='myProjectHeader'>Weather Dashboard</div>
-                    <div className='myProjectContent'>An small application to view a couple of areas's forecast.</div>
+                    <div className="description">
+                        <div className='myProjectHeader'>Weather Dashboard</div>
+                        <div className='myProjectContent'>An small application to view a couple of areas's forecast.</div>
+                    </div>
+
                 </div>
                 <div className='column_box contentFrames' onClick={links.noteTakerLink}>
                 <div className="mockFrame">
                 <img src = { images.noteTakerAvif } className='img' alt='note taker'></img>
                 </div>
+                <div className="description">
                     <div className='myProjectHeader'>Note Taker</div>
                     <div className='myProjectContent'>Create and save notes on the go!</div>
+                </div>
                 </div>
             </div>
             <div className='row'>
@@ -34,24 +41,33 @@ export default function Boxes(props){
                 <div className="mockFrame">
                     <img src = { images.passwordGenAvif } className='img' alt='password gen'></img>
                 </div>
+                <div className="description">
                     <div className='myProjectHeader'>Password Generator</div>
                     <div className='myProjectContent'>Generate a super secret password in just a few clicks.</div>
                 </div>
+                </div>
                 <div className='column_box contentFrames' onClick={links.teamGenLink}>
-
                 <div className="mockFrame">
                 <img src = { images.teamGenAvif } className='img' alt='team gen'></img>
                 </div>
+                <div className="description">
                     <div className='myProjectHeader'>Team Profile Generator</div>
-                    <div className='myProjectContent'>Create a team through a command interface and visually see, update,
-                    and delete the cards when finished setting up.</div>
+                    <div className='myProjectContent'>
+                        Create a team through a
+                        command interface and visually see, update,
+                        and delete the cards when finished setting up.
+                    </div>
+                </div>
+
                 </div>
                 <div className='column_box contentFrames' onClick={links.dayplannerLink}>
                     <div className="mockFrame">
                     <img src = { images.day_plannerAvif } className='img' alt='day planner'></img>
                     </div>
-                    <div className='myProjectHeader'>Day Planner</div>
-                    <div className='myProjectContent'>Create a planner for the day.</div>
+                    <div className="description">
+                        <div className='myProjectHeader'>Day Planner</div>
+                        <div className='myProjectContent'>Create a planner for the day.</div>
+                    </div>
                 </div>
             </div>
         </div>
