@@ -55,7 +55,7 @@ export default function Contact(props){
                      placeholder="Message"
                      required
                      name="message"
-                     maxLength="300"
+                     maxLength="315"
                      rows="7"
                  ></textarea>
                 <hr className="hr-line"/>
