@@ -8,7 +8,7 @@ export default function Contact(props){
     //     return <p>Thanks for joining!</p>;
     // }
     return (
-    <div className ={`slides ${state.succeeded ? "success" : "contact"}`}>
+    <div className ={` slides ${state.succeeded ? "success " : "contact"}`}>
         {
             state.succeeded ?
             <div className="titles success">LET'S GLOW!</div> 

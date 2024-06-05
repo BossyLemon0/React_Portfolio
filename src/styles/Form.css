@@ -19,6 +19,9 @@ input, button, textarea, select {
     margin-top: 15%;
     padding-top: 8%;
     padding-bottom: 3%;
+    /* display: flex;
+    flex-direction: column;
+    align-items: center; */
 }
 
 .slides{
