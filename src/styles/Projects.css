@@ -1,7 +1,6 @@
 
 
-
-.column:hover{
+.column_box:hover{
     cursor: pointer;
 }
 
@@ -31,23 +30,34 @@
 .project_container_boxes{
     display: flex;
     flex-direction: column;
+    height:35rem;
+    justify-content: space-between;
 }
 .row {
     display: flex;
     flex-direction: row;
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
     width: 100%;
+    justify-content: space-between;
   }
   
   .column_box {
-    border: white solid;
+    /* border: white solid; */
+    margin:0 1%;
     display: flex;
     flex-direction: column;
-    flex-basis: 100%;
+    /* flex-basis: 100%; */
     color: white;
-    /* flex: 1; */
-    height: 14rem;
+    flex: 1;
+    height: 16rem;
   }
+
+  /* .contentFrames{
+    display:flex;
+    height: 100%;
+    border: rgba(118, 105, 105, 0.515) solid 7px ;
+    border-radius: 37px;
+} */
 
 /* #endregion */
 
