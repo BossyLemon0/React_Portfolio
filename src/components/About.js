@@ -123,7 +123,7 @@ export default function About(props){
                     <div className='myInfoContent content aboutMesectionPadding'>
                     I’m a goal-oriented Full-Stack developer from Houston,Texas who likes to design new websites,
                     learn new technologies and find new ways to solve problems. I love to help others
-                    bring their ideas life and create something truly amazing. I've worked on company dashboards, 
+                    bring their ideas to life and create things that are truly amazing. I've worked on company dashboards, 
                     promotional websites and more. If you have an awesome idea for a website or app, send me a message
                     below.
                     </div>

@@ -6,7 +6,8 @@
 
 .img{
     width:100%;
-    height: 70%;
+    height: 100%;
+    object-fit: cover;
 }
 
 /* #region third slide projects */
@@ -50,6 +51,26 @@
     color: white;
     flex: 1;
     height: 16rem;
+    overflow: 0;
+  }
+
+  .myProjectHeader{
+    font-size: 1.9rem;
+    /* padding-bottom: %; */
+  }
+  .myProjectContent{
+    color: #8E8E8E;
+    font-size: 1.3rem;
+  }
+
+  .mockFrame{
+    height:60%;
+    width:99.8%;
+    /* border-radius: 37px; */
+    border: rgba(118, 105, 105, 0.515) solid 1px ;
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    overflow: hidden;
   }
 
   /* .contentFrames{
