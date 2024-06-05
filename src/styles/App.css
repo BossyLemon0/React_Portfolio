@@ -69,6 +69,7 @@ body{
     right: 0;
     backdrop-filter: blur(12px);
     box-sizing: border-box;
+    z-index: 1000;
 }
 .nav_items{
     width: 100%;
