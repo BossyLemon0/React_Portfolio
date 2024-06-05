@@ -10,25 +10,23 @@ export default function Contact(props){
     return (
     <div className = 'slides contact'>
         <div className= 'titles'>Contact Me</div>
-        <form onSubmit={handleSubmit}>
+        <form onSubmit={handleSubmit} method="POST">
             <div className="name">
-                <label for=""></label>
                 <input
                     className="form-input"
                     type="text"
                     placeholder="Name"
                     required  
+                    name="name"
                 ></input>
             </div>
             <div className="email">
-                <label for="email">
-                    Email 
-                </label>
                 <input
                     className="form-input"
                     type="email"
                     placeholder="Email"
                     required
+                    name="email"
                 ></input>
                 <ValidationError 
                     prefix="Email" 
@@ -37,17 +35,18 @@ export default function Contact(props){
                 />
             </div>
             <div className="message">
-                <label
+                {/* <label
                     className="form-input"
                     type="date"
                     placeholder="email"
                     required
-                ></label>
+                ></label> */}
                 <textarea
                     className="form-input"
                     type="text"
                     placeholder="Message"
                     required
+                    name="message"
                 ></textarea>
             </div>
             <button type = 'submit' className = 'submit_btn' disabled={state.submitting}>
