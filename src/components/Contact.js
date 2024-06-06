@@ -1,9 +1,13 @@
-import React from "react";
+import React, { lazy, Suspense } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import '../styles/Form.css';
+const SubmitBtnComponent = lazy(()=> import('./FormSuccess'));
+
 
 export default function Contact(props){
     const [state, handleSubmit] = useForm("mzbnlkqo");
+    const renderLoader = () => <div className="titles">Loading...</div>
+
     // if (state.succeeded) {
     //     return <p>Thanks for joining!</p>;
     // }
@@ -19,15 +23,25 @@ export default function Contact(props){
     }
 
     return (
-    <div className ={` end_slide ${state.succeeded ? "success " : "contact"}`}>
+    <div className ={` end_slide ${state.succeeded ? "success" : "contact"}`}>
         {
-            state.succeeded ?
-            <div className="titles success">LET'S GLOW!</div> 
-            :
+            state.succeeded ?(
+                <Suspense fallback = {renderLoader()}>
+                    <SubmitBtnComponent/>
+                </Suspense>
+            )
+            :(
             <>
+            {
+               state.submitting ? (
+                <div className="titles">
+                Loading...
+                </div>
+               )  : (
+                <>
                 <div className= 'titles'>Contact Me</div>
-                <div className="formContainer">
-                    <form onSubmit={handleSubmit} className="form">
+            <div className="formContainer">
+            <form onSubmit={handleSubmit} className="form">
              <div className="name" onFocus={onFocus} onBlur={onBlur}>
                  <input
                      className="form-input"
@@ -78,10 +92,16 @@ export default function Contact(props){
                 </button>
              </div>
 
-                    </form>
-                </div>
 
-            </>
+                    </form>
+            </div>
+                </>
+               )
+            }
+            
+            </> 
+            )
+
         }
     </div>
     );
