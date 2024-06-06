@@ -7,6 +7,17 @@ export default function Contact(props){
     // if (state.succeeded) {
     //     return <p>Thanks for joining!</p>;
     // }
+
+    // on focus add glow to hr line
+    function onFocus(event){
+        console.log(event.target.parentElement.children[0])
+        event.target.parentElement.children[0].classList.add('glow')
+    }
+    function onBlur(event){
+        console.log(event.target.parentElement.children[0])
+        event.target.parentElement.children[0].classList.remove('glow')
+    }
+
     return (
     <div className ={` slides ${state.succeeded ? "success " : "contact"}`}>
         {
@@ -17,13 +28,14 @@ export default function Contact(props){
                 <div className= 'titles'>Contact Me</div>
                 <div className="formContainer">
                     <form onSubmit={handleSubmit} className="form">
-             <div className="name">
+             <div className="name" onFocus={onFocus} onBlur={onBlur}>
                  <input
                      className="form-input"
                      type="text"
                      placeholder="Name"
                      required  
                      name="name"
+
                  ></input>
                  <hr className="hr-line"/>
              </div>
