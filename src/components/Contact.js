@@ -11,15 +11,15 @@ export default function Contact(props){
     // on focus add glow to hr line
     function onFocus(event){
         console.log(event.target.parentElement.children[0])
-        event.target.parentElement.children[0].classList.add('glow')
+        event.target.parentElement.children[1].classList.add('glow')
     }
     function onBlur(event){
         console.log(event.target.parentElement.children[0])
-        event.target.parentElement.children[0].classList.remove('glow')
+        event.target.parentElement.children[1].classList.remove('glow')
     }
 
     return (
-    <div className ={` slides ${state.succeeded ? "success " : "contact"}`}>
+    <div className ={` end_slide ${state.succeeded ? "success " : "contact"}`}>
         {
             state.succeeded ?
             <div className="titles success">LET'S GLOW!</div> 
@@ -39,7 +39,7 @@ export default function Contact(props){
                  ></input>
                  <hr className="hr-line"/>
              </div>
-             <div className="email">
+             <div className="email" onFocus={onFocus} onBlur={onBlur}>
                  <input
                      className="form-input"
                      type="email"
@@ -54,7 +54,7 @@ export default function Contact(props){
                  />
                 <hr className="hr-line"/>
              </div>
-             <div className="message">
+             <div className="message" onFocus={onFocus} onBlur={onBlur}>
                  {/* <label
                      className="form-input"
                      type="date"
@@ -72,9 +72,12 @@ export default function Contact(props){
                  ></textarea>
                 <hr className="hr-line"/>
              </div>
-             <button type = 'submit' className = 'submit_btn' disabled={state.submitting}>
-                 submit
-             </button>
+             <div className="buttonContainer">
+                <button type = 'submit' className = 'submit_btn skillBox' disabled={state.submitting}>
+                    submit
+                </button>
+             </div>
+
                     </form>
                 </div>
 
