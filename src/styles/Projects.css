@@ -8,8 +8,35 @@
     width:100%;
     height: 100%;
     object-fit: cover;
-    opacity:90%;
+    opacity:40%;
 }
+
+.imgGlow{
+  animation: showCard 1s ease forwards;
+}
+
+@keyframes showCard{
+  0%{
+    opacity: 40%;
+}   
+100%{
+  opacity: 90%;
+} 
+}
+
+.unShowCard{
+
+}
+
+@keyframes unShowCard{
+  0%{
+    opacity: 40%;
+}   
+100%{
+  opacity: 90%;
+} 
+}
+
 
 /* #region third slide projects */
 

@@ -1,9 +1,21 @@
-import React from "react";
+import React, {useState} from "react";
 import '../styles/Form.css';
 
 export default function Boxes(props){
     console.log(props.props.links.statTrackerLink)
-     let {links, images} = props.props 
+     let {links, images} = props.props
+     const [hoveredBox, setHoveredBox] = useState(null);
+
+     function handleMouseOver(event, row) {
+        console.log(event.currentTarget)
+        // let child = event.target.children[0]
+        // console.log(child)
+     }
+ 
+     // const debounceMouseOver = debounce(handleMouseOver, 40);
+     function handleMouseOut() {
+         setHoveredBox(null);
+     } 
     return (
         <div className = 'project_container_boxes'>
             <div className='row'>
@@ -37,9 +49,13 @@ export default function Boxes(props){
                 </div>
             </div>
             <div className='row'>
-                <div className='column_box contentFrames' onClick={links.passwordGenLink}>
+                <div className='column_box contentFrames'
+                 onClick={links.passwordGenLink}
+                 onMouseOver={(event) => handleMouseOver(event)}>
                 <div className="mockFrame">
-                    <img src = { images.passwordGenAvif } className='img' alt='password gen'></img>
+                    <img src = { images.passwordGenAvif } 
+                    className={`img ${hoveredBox === 'on' ? 'imgGlow' : ''}` }   
+                    alt='password gen'/>
                 </div>
                 <div className="description">
                     <div className='myProjectHeader'>Password Generator</div>
