@@ -23,7 +23,8 @@ export default function Contact(props){
     }
 
     return (
-    <div className ={` end_slide ${state.succeeded ? "success" : "contact"}`}>
+        // ${state.succeeded ? "success" : "contact"}
+    <div className ={` end_slide contact`}>
         {
             state.succeeded ?(
                 <Suspense fallback = {renderLoader()}>
@@ -34,12 +35,12 @@ export default function Contact(props){
             <>
             {
                state.submitting ? (
-                <div className="titles">
+                <div className="titles success">
                 Loading...
                 </div>
                )  : (
                 <>
-                <div className= 'titles'>Contact Me</div>
+            <div className= 'titles contactPadding'>Contact Me</div>
             <div className="formContainer">
             <form onSubmit={handleSubmit} className="form">
              <div className="name" onFocus={onFocus} onBlur={onBlur}>
@@ -49,6 +50,7 @@ export default function Contact(props){
                      placeholder="Name"
                      required  
                      name="name"
+                     autoComplete="off"
 
                  ></input>
                  <hr className="hr-line"/>
