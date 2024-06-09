@@ -7,9 +7,8 @@ export default function Boxes(props){
      const [hoveredBox, setHoveredBox] = useState(null);
 
      function handleMouseOver(event, row) {
-        console.log(event.currentTarget)
-        // let child = event.target.children[0]
-        // console.log(child)
+        console.log(event.currentTarget.children[0].children[0])
+        let img = event.currentTarget.children[0].children[0]
      }
  
      // const debounceMouseOver = debounce(handleMouseOver, 40);
