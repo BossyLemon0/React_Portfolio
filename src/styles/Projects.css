@@ -11,8 +11,8 @@
     opacity:40%;
 }
 
-.imgGlow{
-  animation: showCard 1s ease forwards;
+.on{
+  animation: showCard .5s ease forwards;
 }
 
 @keyframes showCard{
