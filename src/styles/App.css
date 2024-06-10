@@ -82,6 +82,25 @@ body{
     /* box-shadow:inset 0px -6px 5px 0px rgba(0, 0, 0, .5) ,20px 20px 50px rgba(0, 0, 0, .5) ; I liked this shadow inset rip */
 
 }
+.glowy {
+    transition: filter 0.5s;
+    animation: backdropGlow .5s ease forwards;
+  }
+/* .glowy:hover{
+    animation: backdropGlow .5s ease forwards;
+  } */
+  
+  @keyframes backdropGlow{
+  100%{
+    filter: drop-shadow(0 4px 10px rgb(250, 115, 5))
+    drop-shadow(0 4px 20px rgb(250, 115, 5))
+    /* drop-shadow(0 4px 20px rgb(250, 115, 5)) */
+    /* drop-shadow(0 4px 40px rgb(250, 115, 5)) */
+    /* drop-shadow(0 4px 40px rgb(250, 115, 5)) */
+    /* drop-shadow(0 4px 40px rgb(250, 115, 5)) */
+    /* drop-shadow(0 4px 80px rgb(250, 115, 5)) */
+  } 
+}
 
 .info{
     /* padding: 0 70px 0 0; */
@@ -387,6 +406,7 @@ body{
          0 0 50px rgb(248, 100, 2)
     } 
 }
+
 /* #endregion */
 
 
