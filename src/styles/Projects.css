@@ -125,3 +125,21 @@
 
 /* #endregion */
 
+@media (max-width: 948px) {
+  /* CSS rules for small laptops */
+  .project_container_boxes{
+    width: 100vw;
+  }
+  .row{
+      display: flex;
+      /* flex-direction: column; */
+      flex-wrap: wrap;
+  }
+  .column_box{
+    flex: 1 1 50%;
+  }
+  /* .project{
+    height: 200vh;
+  } */
+
+}
