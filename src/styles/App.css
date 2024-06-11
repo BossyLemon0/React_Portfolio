@@ -424,7 +424,9 @@ body{
 
 @media (max-width: 575px) {
     /* CSS rules for mobile phones */
-
+    .first_slide{
+        font-size: 60px;
+    }
   }
 
 
@@ -446,10 +448,14 @@ body{
 
 
   /* 
-  projects at width 948 and under
+  projects at width 948 and under ><><
   submit button at width 1123 and under
   nav at width 703 and under
-  Hero Title at 529 and under
+  Hero Title at 539 and under
   content overflow on big screens
   */
 
+  @media (max-width: 539px) {
+    /* CSS rules for tablets */
+
+  }
