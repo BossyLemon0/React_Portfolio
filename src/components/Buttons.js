@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "./pages/AboutMe";
+import NavMobMenu from "./NavMobMenu"
 import useMediaQuery from "./customHooks/useMediaQuery"
 console.log(AboutMe);
 
@@ -111,10 +112,10 @@ export default function Buttons(props){
       {
         isTabletorPhone ? 
         (<>
-        
+          <NavMobMenu/>
         </>) 
         : (<>
-                <div onClick = { handleClick } className = {`btn one`} >Home</div>
+        <div onClick = { handleClick } className = {`btn one`} >Home</div>
         <div onClick = { handleClick } className = {`btn two`} >About</div>
         <div onClick = { handleClick } className = {`btn three `} >Projects</div>
         <div onClick = { handleClick } className = {`btn four `} >Contact</div>
