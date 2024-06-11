@@ -14,6 +14,7 @@ export default function Buttons(props){
   const isTabletorPhone = useMediaQuery('(max-width: 767px)');
 
     function active (event){
+      //activates button for styling purposes
         var buttons = document.querySelectorAll('.Btn');
         event.preventDefault();
         console.log(event.target.classList)
@@ -28,11 +29,16 @@ export default function Buttons(props){
         console.log(buttons);
     }
 
-    function elScroll(event){
+    function elScroll(event, ismobile){
         console.log(event.target.classList[1]);
+        console.log(event.currentTarget.id)
+        console.log(ismobile)
+        let switchExpression = ismobile ? event.currentTarget.id : event.target.classList[1]
+        console.log (switchExpression == ' one')
         const el = document.querySelector('.contact')
-        switch (event.target.classList[1]) {
+        switch (switchExpression) {
             case 'one':
+              console.log('hit')
                 scroller.scrollTo('home', {
                     duration: 1400,
                     delay: 100,
@@ -112,7 +118,7 @@ export default function Buttons(props){
       {
         isTabletorPhone ? 
         (<>
-          <NavMobMenu/>
+          <NavMobMenu props = {elScroll} />
         </>) 
         : (<>
         <div onClick = { handleClick } className = {`btn one`} >Home</div>

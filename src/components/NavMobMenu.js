@@ -3,7 +3,8 @@ import Button from '@mui/material/Button';
 import Menu from '@mui/material/Menu';
 import MenuItem from '@mui/material/MenuItem';
 
-export default function NavMobMenu() {
+export default function NavMobMenu(props) {
+  const elScroll = props.props
   const [anchorEl, setAnchorEl] = React.useState(null);
   const open = Boolean(anchorEl);
   const handleClick = (event) => {
@@ -12,6 +13,11 @@ export default function NavMobMenu() {
   const handleClose = () => {
     setAnchorEl(null);
   };
+  const handleClickItem = (event) => {
+    elScroll(event, true)
+    handleClose();
+
+  }
 
   return (
     <div>
@@ -33,11 +39,11 @@ export default function NavMobMenu() {
           'aria-labelledby': 'basic-button',
         }}
       >
-        <MenuItem onClick={handleClose}>Home</MenuItem>
-        <MenuItem onClick={handleClose}>About</MenuItem>
-        <MenuItem onClick={handleClose}>Projects</MenuItem>
-        <MenuItem onClick={handleClose}>Contact</MenuItem>
-        <MenuItem onClick={handleClose}>Resume</MenuItem>
+        <MenuItem onClick={handleClickItem} id = {'one'} >Home</MenuItem>
+        <MenuItem onClick={handleClickItem} id = {'two'} >About</MenuItem>
+        <MenuItem onClick={handleClickItem} id = {'three'} >Projects</MenuItem>
+        <MenuItem onClick={handleClickItem} id = {'four'} >Contact</MenuItem>
+        <MenuItem onClick={handleClickItem} id = {'five'} >Resume</MenuItem>
       </Menu>
     </div>
   );
