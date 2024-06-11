@@ -1,5 +1,6 @@
 import React from "react";
 import AboutMe from "./pages/AboutMe";
+import useMediaQuery from "./customHooks/useMediaQuery"
 console.log(AboutMe);
 
 var Scroll = require('react-scroll');
@@ -9,6 +10,7 @@ var scroller = Scroll.scroller
 
 export default function Buttons(props){
 
+  const isTabletorPhone = useMediaQuery('(max-width: 767px)');
 
     function active (event){
         var buttons = document.querySelectorAll('.Btn');
@@ -106,12 +108,21 @@ export default function Buttons(props){
 
     return (
     <div className = 'info'>
-        <div onClick = { handleClick } className = {`btn one`} >Home</div>
+      {
+        isTabletorPhone ? 
+        (<>
+        
+        </>) 
+        : (<>
+                <div onClick = { handleClick } className = {`btn one`} >Home</div>
         <div onClick = { handleClick } className = {`btn two`} >About</div>
         <div onClick = { handleClick } className = {`btn three `} >Projects</div>
         <div onClick = { handleClick } className = {`btn four `} >Contact</div>
         <div onClick = { handleClick } className = {`btn five`} >Resume</div>
         {/* <div className ={`Btn five ${props.active ? "active": ""}`} >Home</div> */}
+        </>) 
+      }
+
     </div>
     );
 }

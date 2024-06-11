@@ -430,8 +430,11 @@ body{
   }
 
 
-@media (min-width: 576px) and (max-width: 767px) {
+@media (max-width: 767px) {
   /* CSS rules for tablets */
+  .nav{
+    padding: 0;
+  }
 }
 
 @media (min-width: 768px) and (max-width: 991px) {
@@ -451,11 +454,6 @@ body{
   projects at width 948 and under ><><
   submit button at width 1123 and under
   nav at width 703 and under
-  Hero Title at 539 and under
+  Hero Title at 539 and under <><>
   content overflow on big screens
   */
-
-  @media (max-width: 539px) {
-    /* CSS rules for tablets */
-
-  }
