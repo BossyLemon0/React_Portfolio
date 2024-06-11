@@ -37,7 +37,7 @@ export default function Boxes(props){
                         className={`img ${hoveredBox === 'imgGlow1' ? 'on' : ''}` } 
                         alt='stat tracker'/>
                     </div>
-                    <div className="description">
+                    <div className="descriptionContainer">
                         <div className='myProjectHeader'>D&D Tracker</div>
                         <div className='myProjectContent'>A more convienent way for D&D players to keep track of their stats.</div>
                     </div>
@@ -52,7 +52,7 @@ export default function Boxes(props){
                         className={`img ${hoveredBox === 'imgGlow2' ? 'on' : ''}` } 
                         alt='weather board'></img>
                     </div>
-                    <div className="description">
+                    <div className="descriptionContainer">
                         <div className='myProjectHeader'>Weather Dashboard</div>
                         <div className='myProjectContent'>An small application to view a couple of areas's forecast.</div>
                     </div>
@@ -68,7 +68,7 @@ export default function Boxes(props){
                 className={`img ${hoveredBox === 'imgGlow3' ? 'on' : ''}` } 
                 alt='note taker'/>
                 </div>
-                <div className="description">
+                <div className="descriptionContainer">
                     <div className='myProjectHeader'>Note Taker</div>
                     <div className='myProjectContent'>Create and save notes on the go!</div>
                 </div>
@@ -85,7 +85,7 @@ export default function Boxes(props){
                     className={`img ${hoveredBox === 'imgGlow4' ? 'on' : ''}` }   
                     alt='password gen'/>
                 </div>
-                <div className="description">
+                <div className="descriptionContainer">
                     <div className='myProjectHeader'>Password Generator</div>
                     <div className='myProjectContent'>Generate a super secret password in just a few clicks.</div>
                 </div>
@@ -100,12 +100,12 @@ export default function Boxes(props){
                 className={`img ${hoveredBox === 'imgGlow5' ? 'on' : ''}` } 
                 alt='team gen'/>
                 </div>
-                <div className="description">
+                <div className="descriptionContainer">
                     <div className='myProjectHeader'>Team Profile Generator</div>
                     <div className='myProjectContent'>
-                        Create a team through a
+                        Create a team on a
                         command interface and visually see, update,
-                        and delete the cards when finished setting up.
+                        and delete the cards.
                     </div>
                 </div>
 
@@ -120,7 +120,7 @@ export default function Boxes(props){
                     className={`img ${hoveredBox === 'imgGlow6' ? 'on' : ''}` } 
                     alt='day planner'/>
                     </div>
-                    <div className="description">
+                    <div className="descriptionContainer">
                         <div className='myProjectHeader'>Day Planner</div>
                         <div className='myProjectContent'>Create a planner for the day.</div>
                     </div>
