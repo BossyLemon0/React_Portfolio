@@ -424,9 +424,10 @@ body{
 
 @media (max-width: 575px) {
     /* CSS rules for mobile phones */
-    .first_slide{
+    .titles,.first_slide{
         font-size: 60px;
     }
+
   }
 
 

@@ -96,6 +96,10 @@ input, button, textarea, select {
     justify-content: center;
     height: 3rem;
   }
+  .submit_btn{
+    /* font-size: 170%; */
+    font-size: 2vw;
+  }
   .submit_btn:hover{
     cursor: pointer;
   }
