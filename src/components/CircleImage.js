@@ -7,19 +7,9 @@ const {ref, inView} = useInView({
   rootMargin:'100px 0px'
 })
 
-  const circleStyle = {
-    width: '9rem', // Adjust as needed
-    height: '9rem', // Adjust as needed
-    borderRadius: '50%',
-    border: `2px solid ${frameColor}`,
-    // backgroundImage: `url(${imageUrl})`,
-    // backgroundImage: "url(/logo192.png)",
-    backgroundImage: inView ?`url(${process.env.PUBLIC_URL + '/images/myNikePic.jpg'})`: 'none',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center 30%',
-  };
-
-  return <div ref={ref} style={circleStyle}></div>;
+  return <div ref={ref} className='myPictureFrame' >
+    <img  className='myPicture'  src={`${process.env.PUBLIC_URL}/images/myNikePic.jpg`} alt="My Picture" />
+  </div>;
 };
 
 export default CircleImage;
