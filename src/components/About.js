@@ -1,10 +1,13 @@
 import React, { useState } from 'react';
 import { debounce } from 'lodash';
 import CircleImage from './CircleImage';
+import useMediaQuery from "./customHooks/useMediaQuery"
 
 export default function About(props){
 
     const [hoveredRow, setHoveredRow] = useState(null);
+
+    const isTabletorPhone = useMediaQuery('(max-width: 767px)');
 
     function handleMouseOver(event, row) {
         // console.log(event.target.parentNode.parentNode.getBoundingClientRect())
@@ -14,9 +17,6 @@ export default function About(props){
         // const mouseX = event.clientX;
         // const rowMidpoint = rect.left + rect.width / 2;
         // const distanceFromMidpoint = mouseX - rowMidpoint;
-
-
-
 
         const skillsBox = event.target.parentNode.parentNode.getBoundingClientRect();
         const mouseX = event.clientX;
@@ -43,7 +43,14 @@ export default function About(props){
     return (
     <div className = 'slides about' name='about'>
         <div className="titles titleAbout">
-            <div>What I'm About</div>
+            {
+                isTabletorPhone ? (
+                    <div>About</div>
+                ):(
+                    <div>What I'm About</div>
+                )
+            }
+
         </div>
         <div className="contentContainer">
 
