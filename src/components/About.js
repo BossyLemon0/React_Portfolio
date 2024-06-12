@@ -1,8 +1,6 @@
 import React, { useState } from 'react';
 import { debounce } from 'lodash';
 import CircleImage from './CircleImage';
-// import myPic from '../../public/myNikePic.jpg'
-// import '../styles/App.css';
 
 export default function About(props){
 
