@@ -684,6 +684,30 @@ body{
             padding: 2% 0;
         }
         .myInfoContent{
+            font-size: 1.4vw;
+        }
+      }
+      @media (max-width: 1019px)and (max-height: 400px) {
+        .myPictureFrame{
+            height: 5rem;
+            width: 5rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
+            font-size: 1.3vw;
+        }
+      }
+      @media (max-width: 1019px)and (max-height: 330px) {
+        .myPictureFrame{
+            height: 5rem;
+            width: 5rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
             font-size: 1.2vw;
         }
       }
