@@ -1,12 +1,15 @@
 import React, { lazy, Suspense } from "react";
 import { useForm, ValidationError } from '@formspree/react';
 import '../styles/Form.css';
+import useMediaQuery from "./customHooks/useMediaQuery"
 const SubmitBtnComponent = lazy(()=> import('./FormSuccess'));
+
 
 
 export default function Contact(props){
     const [state, handleSubmit] = useForm("mzbnlkqo");
     const renderLoader = () => <div className="titles">Loading...</div>
+    const isTabletorPhone = useMediaQuery('(max-width: 767px)');
 
     // if (state.succeeded) {
     //     return <p>Thanks for joining!</p>;
@@ -40,7 +43,13 @@ export default function Contact(props){
                 </div>
                )  : (
                 <>
-            <div className= 'titles contactPadding'>Contact Me</div>
+            {
+                isTabletorPhone ? (
+                    <div className= 'titles contactPadding'>Contact</div>
+                ):(
+                    <div className= 'titles contactPadding'>Contact Me</div>
+                )
+            }
             <div className="formContainer">
             <form onSubmit={handleSubmit} className="form">
              <div className="name" onFocus={onFocus} onBlur={onBlur}>
