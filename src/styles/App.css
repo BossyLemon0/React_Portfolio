@@ -477,6 +477,9 @@ body{
     width: 90%;
     /* height: 60%; */
 }
+.myInfoContent{
+    padding-bottom: 3%;
+}
     }
 @media (min-width: 768px) and (max-width: 991px) {
     /* CSS rules for small laptops */
@@ -485,6 +488,10 @@ body{
     }
     .contentFrames{
         flex: 1 1 100%;
+    }
+    .myInfoContent{
+        /* font-size: 1.6vw; */
+        /* font-size: 2vw; */
     }
     }
 
@@ -530,7 +537,7 @@ body{
     }
     .myInfoContent{
         /* font-size: 1.5vw; */
-        font-size: 3.5vh;
+        font-size: 3.4vh;
     }
   }
   @media (max-height: 400px) {
@@ -558,7 +565,7 @@ body{
 
     /* Width and Height */
 
-    @media (max-width: 900px)and (max-height: 656px) {
+      @media (max-width: 991px) and (max-height: 656px) {
         .myPictureFrame{
             height: 7rem;
             width: 7rem;
@@ -567,8 +574,7 @@ body{
             padding: 2% 0;
         }
         .myInfoContent{
-            font-size: 1.65vw;
-            font-size: 3v;
+            font-size: 1.5vw;
         }
       }
       @media (max-width:767px) and (max-height: 656px) {
@@ -637,6 +643,48 @@ body{
             font-size: 1.65vw;
             /* font-size: 3v; */
             padding-bottom: 2%;
+        }
+      }
+
+
+
+      @media (max-width: 900px)and (max-height: 580px) {
+        .myPictureFrame{
+            height: 7rem;
+            width: 7rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+        }
+      }
+
+
+      @media (max-width: 1019px)and (max-height: 500px) {
+        .myPictureFrame{
+            height: 6rem;
+            width: 6rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
+            font-size: 1.5vw;
+        }
+      }
+
+      @media (max-width: 1019px)and (max-height: 425px) {
+        .myPictureFrame{
+            height: 5rem;
+            width: 5rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
+            font-size: 1.2vw;
         }
       }
 
