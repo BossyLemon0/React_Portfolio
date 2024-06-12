@@ -435,23 +435,30 @@ body{
 
 /* #endregion */
 
+/* width */
 
-@media (max-width: 360px) {
+@media (max-width: 270px) {
+    /* CSS rules for mobile phones */
+    .titles,.first_slide{
+        font-size: 30px;
+    }
+
+    }
+
+@media (min-width: 270.1px) and (max-width: 360px) {
     /* CSS rules for mobile phones */
     .titles,.first_slide{
         font-size: 40px;
     }
 
-  }
+    }
 @media (min-width: 361px)and (max-width: 575px) {
     /* CSS rules for mobile phones */
     .titles,.first_slide{
         font-size: 60px;
     }
 
-  }
-
-
+    }
 @media (max-width: 767px) {
   /* CSS rules for tablets */
   .nav{
@@ -470,8 +477,7 @@ body{
     width: 90%;
     /* height: 60%; */
 }
-}
-
+    }
 @media (min-width: 768px) and (max-width: 991px) {
     /* CSS rules for small laptops */
     .contentContainer{
@@ -480,23 +486,159 @@ body{
     .contentFrames{
         flex: 1 1 100%;
     }
-  }
+    }
 
-  @media (min-width: 992px) and (max-width: 1199px) {
+@media (min-width: 992px) and (max-width: 1199px) {
     /* CSS rules for desktops */
-  }
-
-  @media (min-width: 1200px) {
+    }
+@media (min-width: 1200px) {
     /* CSS rules for large desktops */
-  }
+    }
+
+  /* height */
 
   @media (max-height: 656px) {
-    .logoSection.myPicture{
+    .myPictureFrame{
         height: 8rem;
         width: 8rem;
     }
+    .logoSection{
+        padding: 2% 0;
+    }
+  }
+  @media (max-height: 580px) {
+    .myPictureFrame{
+        height: 7rem;
+        width: 7rem;
+    }
+    .logoSection{
+        padding: 2% 0;
+    }
+    .myInfoContent{
+        /* font-size: 1.6vw; */
+        font-size: 3.1vh;
+    }
   }
 
+  @media (max-height: 500px) {
+    .myPictureFrame{
+        height: 6rem;
+        width: 6rem;
+    }
+    .logoSection{
+        padding: 2% 0;
+    }
+    .myInfoContent{
+        /* font-size: 1.5vw; */
+        font-size: 3.5vh;
+    }
+  }
+  @media (max-height: 400px) {
+    .myPictureFrame{
+        height: 5rem;
+        width: 5rem;
+    }
+    .myInfoContent{
+        /* font-size: 1.5vw; */
+        font-size: 3.5vh;
+    }
+  }
+
+  @media (max-height: 330px) {
+    .myPictureFrame{
+        height: 4rem;
+        width: 4rem;
+    }
+    .myInfoContent{
+        /* font-size: 1.5vw; */
+        font-size: 3.5vh;
+    }
+  }
+
+
+    /* Width and Height */
+
+    @media (max-width: 900px)and (max-height: 656px) {
+        .myPictureFrame{
+            height: 7rem;
+            width: 7rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+            font-size: 3v;
+        }
+      }
+      @media (max-width:767px) and (max-height: 656px) {
+        .myPictureFrame{
+            height: 5rem;
+            width: 5rem;
+        }
+        .logoSection{
+            padding: 2% 0;
+        }
+        .myInfoHeader{
+            padding-bottom: 0;
+        }
+        .header{
+            font-size: 5vh;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+            /* font-size: 3v; */
+            padding-bottom: 2%;
+        }
+      }
+      @media (max-width:550px) and (max-height: 656px) {
+        .myPictureFrame{
+            height: 4rem;
+            width: 4rem;
+        }
+        .header{
+            font-size: 4vh;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+            /* font-size: 3v; */
+            padding-bottom: 2%;
+        }
+      }
+      @media (max-width:450px) and (max-height: 656px) {
+        .myPictureFrame{
+            height: 4rem;
+            width: 4rem;
+        }
+        .header{
+            font-size: 3vh;
+        }
+        .logoSection{
+            padding: 1% 0;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+            /* font-size: 3v; */
+            padding-bottom: 2%;
+        }
+      }
+      @media (max-width:350px) and (max-height: 656px) {
+        .myPictureFrame{
+            height: 3rem;
+            width: 3rem;
+        }
+        .header{
+            font-size: 3vh;
+        }
+        .logoSection{
+            padding: 1% 0;
+        }
+        .myInfoContent{
+            font-size: 1.65vw;
+            /* font-size: 3v; */
+            padding-bottom: 2%;
+        }
+      }
 
   /* 
   projects at width 948 and under ><><
