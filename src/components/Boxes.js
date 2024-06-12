@@ -1,11 +1,16 @@
 import React, {useState} from "react";
 import '../styles/Form.css';
 import { forEach } from "lodash";
+import { useInView } from 'react-intersection-observer';
 
 export default function Boxes(props){
     // console.log(props.props.links.statTrackerLink)
      let {links, images} = props.props
      const [hoveredBox, setHoveredBox] = useState(null);
+     const {ref, inView} = useInView({
+        triggerOnce:true,
+        rootMargin:'100px 0px'
+      })
 
 
     // To fix my problem I can create multiple hover css for each box or detect change the turnary to detect image name
@@ -26,16 +31,23 @@ export default function Boxes(props){
      } 
     return (
         <div className = 'project_container_boxes'>
-            <div className='row'>
+            <div className='row' ref ={ref}>
                 <div className='column_box contentFrames' 
                 id="imgGlow1"
                 onClick={links.statTrackerLink}
                 onMouseOver={(event) => handleMouseEnter(event)}
                 onMouseOut={handleMouseLeaves}>
                     <div className="mockFrame">
-                        <img src = { images.statTrackerAvif } 
-                        className={`img ${hoveredBox === 'imgGlow1' ? 'on' : ''}` } 
-                        alt='stat tracker'/>
+                        {
+                            useInView ? (
+                                <img src = { images.statTrackerAvif } 
+                                className={`img ${hoveredBox === 'imgGlow1' ? 'on' : ''}` } 
+                                alt='stat tracker'/>
+                            ):(
+                                <></>
+                            )
+                        }
+
                     </div>
                     <div className="descriptionContainer">
                         <div className='myProjectHeader'>D&D Tracker</div>
@@ -48,9 +60,16 @@ export default function Boxes(props){
                 onMouseOver={(event) => handleMouseEnter(event)}
                 onMouseOut={handleMouseLeaves}>
                     <div className="mockFrame">
-                        <img src = { images.weatherBoadAvif } 
-                        className={`img ${hoveredBox === 'imgGlow2' ? 'on' : ''}` } 
-                        alt='weather board'></img>
+                        {
+                            useInView ? (
+                                <img src = { images.weatherBoadAvif } 
+                                className={`img ${hoveredBox === 'imgGlow2' ? 'on' : ''}` } 
+                                alt='weather board'></img>
+                            ):(
+                                <></>
+                            )
+                        }
+
                     </div>
                     <div className="descriptionContainer">
                         <div className='myProjectHeader'>Weather Dashboard</div>
@@ -64,9 +83,16 @@ export default function Boxes(props){
                 onMouseOver={(event) => handleMouseEnter(event)}
                 onMouseOut={handleMouseLeaves}>
                 <div className="mockFrame">
-                <img src = { images.noteTakerAvif } 
-                className={`img ${hoveredBox === 'imgGlow3' ? 'on' : ''}` } 
-                alt='note taker'/>
+                    {
+                        useInView ? (
+                            <img src = { images.noteTakerAvif } 
+                            className={`img ${hoveredBox === 'imgGlow3' ? 'on' : ''}` } 
+                            alt='note taker'/>
+                        ):(
+                            <></>
+                        )
+                    }
+
                 </div>
                 <div className="descriptionContainer">
                     <div className='myProjectHeader'>Note Taker</div>
@@ -74,16 +100,22 @@ export default function Boxes(props){
                 </div>
                 </div>
             </div>
-            <div className='row'>
+            <div className='row' ref ={ref}>
                 <div className='column_box contentFrames'
                  id="imgGlow4"
                  onClick={links.passwordGenLink}
                  onMouseOver={(event) => handleMouseEnter(event)}
                  onMouseOut={handleMouseLeaves}>
                 <div className="mockFrame">
-                    <img src = { images.passwordGenAvif } 
-                    className={`img ${hoveredBox === 'imgGlow4' ? 'on' : ''}` }   
-                    alt='password gen'/>
+                    {
+                        useInView ? (
+                        <img src = { images.passwordGenAvif } 
+                        className={`img ${hoveredBox === 'imgGlow4' ? 'on' : ''}` }   
+                        alt='password gen'/>
+                         ):(
+                        <></>
+                         )
+                    }
                 </div>
                 <div className="descriptionContainer">
                     <div className='myProjectHeader'>Password Generator</div>
@@ -96,9 +128,16 @@ export default function Boxes(props){
                 onMouseOver={(event) => handleMouseEnter(event)}
                 onMouseOut={handleMouseLeaves}>
                 <div className="mockFrame">
-                <img src = { images.teamGenAvif }
-                className={`img ${hoveredBox === 'imgGlow5' ? 'on' : ''}` } 
-                alt='team gen'/>
+                    {
+                        useInView ? (
+                            <img src = { images.teamGenAvif }
+                            className={`img ${hoveredBox === 'imgGlow5' ? 'on' : ''}` } 
+                            alt='team gen'/>
+                        ):(
+                            <></>
+                        )
+                    }
+
                 </div>
                 <div className="descriptionContainer">
                     <div className='myProjectHeader'>Team Profile Generator</div>
@@ -116,9 +155,16 @@ export default function Boxes(props){
                 onMouseOver={(event) => handleMouseEnter(event)}
                 onMouseOut={handleMouseLeaves}>
                     <div className="mockFrame">
-                    <img src = { images.day_plannerAvif }
-                    className={`img ${hoveredBox === 'imgGlow6' ? 'on' : ''}` } 
-                    alt='day planner'/>
+                        {
+                            useInView ? (
+                                <img src = { images.day_plannerAvif }
+                                className={`img ${hoveredBox === 'imgGlow6' ? 'on' : ''}` } 
+                                alt='day planner'/>
+                            ):(
+                                <></>
+                            )
+                        }
+
                     </div>
                     <div className="descriptionContainer">
                         <div className='myProjectHeader'>Day Planner</div>
