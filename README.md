@@ -15,14 +15,14 @@
 
 ## Description
 
-This project allows those doing workouts to keep track of their exercises!
+This repo aims to revamp my last thrown together portfolio by adding better media queries, fixing performance issues, and adding better design overall. Some of the links are not deployed and may be added in the future if time allows. If not a coursel of pictures may be added to give more context of projects found on this portfolio.
 
 ## Installation
 No installation required.
 
 ## Usage
 
-This repo aims to revamp my last thrown together portfolio by adding better media queries, fixing performance issues, and adding better design overall.
+Take a step into some of the work done by, yours truly, Omar Ramirez ;). 
 
 ![Application form](./Images/fitness_tracker_form.png)
 
